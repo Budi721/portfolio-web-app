@@ -3,47 +3,39 @@ import Image from 'next/image'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoAnimaginary from '@/images/logos/animaginary.svg'
-import logoCosmos from '@/images/logos/cosmos.svg'
-import logoHelioStream from '@/images/logos/helio-stream.svg'
-import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
+import logoMyAccountant from '@/images/logos/my-accountant.png'
+import logoAhu from '@/images/logos/ahu.png'
+import logoGolek from '@/images/logos/golekapp.png'
+import logoAmply from '@/images/logos/amply-music.png'
 
 const projects = [
   {
-    name: 'Planetaria',
+    name: 'Amply',
     description:
-      'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
-    logo: logoPlanetaria,
+      'Music streaming app with a wide selection of songs from different genres and artists around the world. The app features a Relaxation Music category for users looking for calming, peaceful music to help them unwind and de-stress.',
+    link: { href: 'https://github.com/Binar-Bootcamp/musik-asiq/tree/devel', label: 'github.com' },
+    logo: logoAmply,
   },
   {
-    name: 'Animaginary',
+    name: 'My Accountant',
     description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoAnimaginary,
+      ' With the help of an accountant app, users can easily manage their income and expenses, keep track of their cash flow, and maintain accurate financial records.',
+    link: { href: 'https://github.com/Binar-Bootcamp/my-accountant/tree/devel', label: 'github.com' },
+    logo: logoMyAccountant,
   },
   {
-    name: 'HelioStream',
+    name: 'AHU go.id',
     description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoHelioStream,
+      'The website offers various online services for users, including online registration for individuals and businesses, online search for legal entity data, and online application for legal entity amendments.',
+    link: { href: 'https://www.ahu.go.id/', label: 'Ditjen AHU' },
+    logo: logoAhu,
   },
   {
-    name: 'cosmOS',
+    name: 'GolekTruk App',
     description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoCosmos,
-  },
-  {
-    name: 'OpenShuttle',
-    description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoOpenShuttle,
+      'Golek Truk is a mobile application that connects shippers and truckers in Indonesia. The app allows shippers to easily find available truckers for their cargo transportation needs, while also enabling truckers to find potential jobs and expand their business.',
+    link: { href: 'https://play.google.com/store/apps/details?id=com.golektruk.dotcom', label: 'Google Play' },
+    logo: logoGolek,
   },
 ]
 
