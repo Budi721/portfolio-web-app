@@ -247,7 +247,7 @@ export default function Home({articles}) {
     <>
       <Head>
         <title>
-          Budi Rahmawan - Software engineer and amateur brewer
+          Budi Rahmawan - Software engineer and amateur coffee brewer
         </title>
         <meta
           name="description"
@@ -260,7 +260,7 @@ export default function Home({articles}) {
             <span className="underline">Budi</span> Rahmawan
           </h1>
           <h3 className="mt-2 text-lg font-semibold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-xl ">
-            Software engineer and amateur brewer
+            Software engineer and amateur coffee brewer
           </h3>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             I’m Rahmawan, a software engineer and entrepreneur based in Pekalongan
