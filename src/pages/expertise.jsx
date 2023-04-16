@@ -4,7 +4,7 @@ import {Card} from '@/components/Card'
 import {SimpleLayout} from '@/components/SimpleLayout'
 import SliderCertificate from "@/components/SliderCertificate";
 
-function Appearance({title, description, event, cta, href}) {
+function Appearance({title, description, cta, href}) {
   return (
     <Card as="article">
       <Card.Title as="h3" href={href}>
@@ -20,7 +20,7 @@ export default function Expertise() {
   return (
     <>
       <Head>
-        <title>Expertise - Spencer Sharp</title>
+        <title>Expertise - Budi Rahmawan</title>
         <meta
           name="description"
           content="I’ve spoken at events all around the world and been interviewed for many podcasts."
@@ -37,28 +37,24 @@ export default function Expertise() {
             href="#"
             title="Software Development"
             description="Experienced in both functional and OOP: Dart, Python, Java, JavaScript, TypeScript."
-            event="Software Development"
             cta="Read More"
           />
           <Appearance
             href="#"
             title="Frontend Dev React, NextJS"
             description="Passionate about UI/UX. Over 4 years of development experience in HTML, CSS, JS, React and NextJS frameworks."
-            event="Frontend Dev React, NextJS"
             cta="Read More"
           />
           <Appearance
             href="#"
             title="Backend Dev"
-            description="They say that if you’re not embarassed by your first version, you’re doing it wrong. Well when you’re selling DIY space shuttle kits it turns out it’s a bit more complicated."
-            event="Backend Dev"
+            description="Backend development involves building and maintaining the server-side of web applications, which includes creating and managing databases, managing server resources, and handling server-side programming languages such as Python, Java, PHP, or Ruby."
             cta="Read More"
           />
           <Appearance
             href="#"
             title="Flutter Dev and Android Kotlin"
             description="Skilled in developing hybrid mobile apps and cross-platform solutions using the Flutter framework."
-            event="Flutter Dev and Android Kotlin"
             cta="Read More"
           />
 
