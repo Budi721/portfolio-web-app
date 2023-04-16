@@ -28,7 +28,7 @@ export default function Expertise() {
       </Head>
       <SimpleLayout
         title="My Expertise"
-        intro="Your expertise may also include knowledge of software development methodologies, such as Agile or Waterfall, and experience working in collaborative team environments. You may be skilled in identifying and troubleshooting software bugs, optimizing code for performance, and creating technical documentation for projects. Additionally, you may have specialized expertise in a particular area of software engineering, such as web development, mobile app development, database management, or machine learning. You may have a deep understanding of specific technologies or tools commonly used in your area of expertise, and may have completed specialized training or certification programs to develop your skills."
+        intro="As a software engineer my expertise may also include knowledge of software development methodologies, such as Agile or Waterfall, and experience working in collaborative team environments. I'm also skilled in identifying and troubleshooting software bugs, optimizing code for performance, and creating technical documentation for projects."
       >
         <div className="space-y-20">
           <SliderCertificate/>

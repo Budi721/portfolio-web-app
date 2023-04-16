@@ -30,53 +30,53 @@ export default function SliderCertificate() {
           clickable: true,
         }}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper border-2 rounded-md h-[28rem] md:h-[42rem]"
+        className="mySwiper border-2 rounded-md h-[20rem] md:h-[38rem]"
       >
         <SwiperSlide>
           <Image
-            className="object-fill w-full h-[28rem] md:h-[42rem]"
+            className="object-fill w-full h-[20rem] md:h-[38rem]"
             src={cert1}
             alt="image slide 1"
           />
         </SwiperSlide>
         <SwiperSlide>
           <Image
-            className="object-fill w-full h-[28rem] md:h-[42rem]"
+            className="object-fill w-full h-[20rem] md:h-[38rem]"
             src={cert2}
             alt="image slide 1"
           />
         </SwiperSlide>
         <SwiperSlide>
           <Image
-            className="object-fill w-full h-[28rem] md:h-[42rem]"
+            className="object-fill w-full h-[20rem] md:h-[38rem]"
             src={cert3}
             alt="image slide 1"
           />
         </SwiperSlide>
         <SwiperSlide>
           <Image
-            className="object-fill w-full h-[28rem] md:h-[42rem]"
+            className="object-fill w-full h-[20rem] md:h-[38rem]"
             src={cert4}
             alt="image slide 1"
           />
         </SwiperSlide>
         <SwiperSlide>
           <Image
-            className="object-fill w-full h-[28rem] md:h-[42rem]"
+            className="object-fill w-full h-[20rem] md:h-[38rem]"
             src={cert5}
             alt="image slide 1"
           />
         </SwiperSlide>
         <SwiperSlide>
           <Image
-            className="object-fill w-full h-[28rem] md:h-[42rem]"
+            className="object-fill w-full h-[20rem] md:h-[38rem]"
             src={cert6}
             alt="image slide 1"
           />
         </SwiperSlide>
         <SwiperSlide>
           <Image
-            className="object-fill w-full h-[28rem] md:h-[42rem]"
+            className="object-fill w-full h-[20rem] md:h-[38rem]"
             src={cert7}
             alt="image slide 1"
           />
