@@ -23,6 +23,7 @@ import image5 from '@/images/photos/image-5.jpg'
 import {formatDate} from '@/lib/formatDate'
 import {generateRssFeed} from '@/lib/generateRssFeed'
 import {getAllArticles} from '@/lib/getAllArticles'
+import {useState} from "react";
 
 function MailIcon(props) {
   return (
@@ -108,8 +109,25 @@ function SocialLink({icon: Icon, ...props}) {
 }
 
 function Newsletter() {
+
+  const [email, setEmail] = useState("")
+
+  const handleSubmitSubscription = async () => {
+    await fetch('/api/mailchimp', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        "email": email,
+        "status": "subscribed"
+      }),
+    });
+  };
+
   return (
     <form
+      onSubmit={handleSubmitSubscription}
       action="/thank-you"
       className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40"
     >
@@ -127,6 +145,7 @@ function Newsletter() {
           aria-label="Email address"
           required
           className="min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10 sm:text-sm"
+          onChange={e => setEmail(e.target.value)}
         />
         <Button type="submit" className="ml-4 flex-none">
           Join
