@@ -4,11 +4,11 @@ export default async function handler(req, res) {
   const baseUrl = process.env.MAILCHIMP_BASE_URL
   const listId = process.env.MAILCHIMP_LIST_ID
 
-  const response = await fetch(baseUrl + '/lists/' + listId + '/members', {
+  const response = await fetch(`${baseUrl}/lists/${listId}/members`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      Authorization: 'Basic ' + 'auth ' + apiKey,
+      Authorization: `auth ${apiKey}`,
     },
     body: JSON.stringify({
       "email_address": email,
