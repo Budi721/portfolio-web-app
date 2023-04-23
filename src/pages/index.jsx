@@ -157,16 +157,16 @@ function Newsletter() {
 
 function Resume() {
   let resume = [
-    {
-      company: 'Lacak.io',
-      title: 'Java Springboot Developer',
-      logo: logoLacak,
-      start: '2022',
-      end: {
-        label: 'Present',
-        dateTime: new Date().getFullYear(),
-      },
-    },
+    // {
+    //   company: 'Lacak.io',
+    //   title: 'Java Springboot Developer',
+    //   logo: logoLacak,
+    //   start: '2022',
+    //   end: {
+    //     label: 'Present',
+    //     dateTime: new Date().getFullYear(),
+    //   },
+    // },
     {
       company: 'GolekTruk',
       title: 'Frontend Developer',
@@ -270,7 +270,7 @@ export default function Home({articles}) {
         </title>
         <meta
           name="description"
-          content="I’m Budi, a software engineer and entrepreneur based in Pekalongan City. I’m the founder and CEO of Butique, where we develop technologies that empower regular people to explore space on their own terms."
+          content="I’m Budi, a software engineer and entrepreneur based in Pekalongan City. I’m the founder and CEO of Boutique.id, where we develop technologies that empower regular people to explore ideas on their own terms."
         />
       </Head>
       <Container className="mt-9">
@@ -283,8 +283,8 @@ export default function Home({articles}) {
           </h3>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             I’m Rahmawan, a software engineer and entrepreneur based in Pekalongan
-            City. <br/> I’m the founder and CEO of Butique, where we develop
-            technologies that empower regular people to explore space on their
+            City. <br/> I’m the founder and CEO of Boutique.id, where we develop
+            technologies that empower regular people to explore ideas on their
             own terms.
           </p>
           <div className="mt-6 flex gap-6">
