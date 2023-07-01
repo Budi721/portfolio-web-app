@@ -1,7 +1,6 @@
 import nextMDX from '@next/mdx'
 import remarkGfm from 'remark-gfm'
 import rehypePrism from '@mapbox/rehype-prism'
-import nextPwa from 'next-pwa'
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -20,10 +19,4 @@ const withMDX = nextMDX({
   },
 })
 
-const withPWA = nextPwa({
-  dest: 'public',
-  disable: process.env.NODE_ENV === "development"
-  // disable is help to disable PWA in deployment mode
-})
-
-export default withPWA(withMDX(nextConfig))
+export default withMDX(nextConfig)
